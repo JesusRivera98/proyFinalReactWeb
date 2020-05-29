@@ -1,7 +1,8 @@
 import React from 'react';
 import "../App.css";
 //import UserProfile from '../Session';
-const API_TOKEN = '2abbf7c3-245b-404f-9473-ade729ed4653';
+const {API_TOKEN, API_URL} = require('../config');
+//const API_TOKEN = '2abbf7c3-245b-404f-9473-ade729ed4653';
 
 class AddUser extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class AddUser extends React.Component {
             firstName: "",
             lastName: "",
             email: "",
-            apiURL: "http://localhost:8080",
+            apiURL: API_URL,
             products: []
         }
 

@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
-const API_TOKEN = '2abbf7c3-245b-404f-9473-ade729ed4653';
+const {API_TOKEN, API_URL} = require('./config');
+//const API_TOKEN = '2abbf7c3-245b-404f-9473-ade729ed4653';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       email : "",
-      apiURL : "http://localhost:8080/",
+      apiURL : `${API_URL}/`,
       errorMessage : ""
     };
   }

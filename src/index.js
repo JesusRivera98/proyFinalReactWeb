@@ -6,6 +6,7 @@ import App from './App';
 import NoRouteMatch from './NoRouteMatch';
 import Profile from './Profile';
 
+
 import Home from './Home/Home';
 import HomeChef from './Home/Home-Chef'
 import HomeClient from './Home/Home-Client'
@@ -34,6 +35,8 @@ import Clients from './Owner/Clients'
 import Products from './Owner/Products'
 import Users from './Owner/Users'
 import Comments from './Owner/Comments'
+
+const {API_TOKEN, API_URL} = require('./config');
 //import 
 
 ReactDOM.render(
